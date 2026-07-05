@@ -16,13 +16,18 @@
 
 ## 页面预览
 
-**主界面**
+> 🚀 在线预览：[https://cubegao.github.io/unlock-door/](https://cubegao.github.io/unlock-door/)
 
-![主界面](preview-home.png)
-
-**分享开门**
-
-![分享开门](preview-share.png)
+<table>
+  <tr>
+    <td align="center"><b>主界面</b></td>
+    <td align="center"><b>分享开门</b></td>
+  </tr>
+  <tr>
+    <td><img src="preview-home.png" alt="主界面"></td>
+    <td><img src="preview-share.png" alt="分享开门"></td>
+  </tr>
+</table>
 
 ## 项目结构
 
