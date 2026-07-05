@@ -12,7 +12,7 @@
 - **分享链接**：生成带参数的链接，家人打开后点击「我要开门」即可使用
 - **结果推送**：开门结果通过 Bark 推送到手机
 - **命令记忆**：自动保存上一次使用的 cURL 命令
-- **PWA 友好**：可添加到手机主屏幕，像原生 App 一样使用
+- **PWA 支持**：可安装到手机主屏幕，支持离线使用
 
 ## 页面预览
 
@@ -34,6 +34,8 @@
 ```
 unlock-door/
 ├── index.html          # 入口页面
+├── manifest.json       # PWA 应用清单
+├── sw.js              # Service Worker 离线缓存
 ├── favicon.svg         # 项目图标
 ├── css/
 │   └── style.css       # 样式表
@@ -53,6 +55,7 @@ unlock-door/
 - HTML5 + CSS3 + 原生 JavaScript（ES5+）
 - CSS Variables + BEM
 - Fetch API + AbortController
+- Service Worker（离线缓存）
 - localStorage
 
 ## 声明

@@ -247,4 +247,15 @@
   } else {
     init();
   }
+
+  // Register Service Worker for PWA offline support
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/unlock-door/sw.js')
+      .then(function (reg) {
+        console.log('SW registered:', reg.scope);
+      })
+      .catch(function (err) {
+        console.log('SW registration failed:', err);
+      });
+  }
 })();
