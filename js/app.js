@@ -5,32 +5,6 @@
 (function () {
   'use strict';
 
-  // ==================== Dynamic PWA manifest ====================
-  // If current page has URL params (shared link), generate manifest
-  // with start_url including params so "Add to Home Screen" preserves them
-  if (window.location.search) {
-    var manifestEl = document.querySelector('link[rel="manifest"]');
-    if (manifestEl) {
-      var dynamicManifest = {
-        name: '开门啦',
-        short_name: '开门啦',
-        description: '一键快速开门，无需再打开微信小程序',
-        start_url: location.pathname + location.search,
-        scope: '/unlock-door/',
-        display: 'standalone',
-        orientation: 'portrait',
-        theme_color: '#f5f5f5',
-        background_color: '#ffffff',
-        icons: [
-          { src: '/unlock-door/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: '/unlock-door/icon-512.png', sizes: '512x512', type: 'image/png' }
-        ]
-      };
-      var blob = new Blob([JSON.stringify(dynamicManifest)], { type: 'application/json' });
-      manifestEl.href = URL.createObjectURL(blob);
-    }
-  }
-
   // ==================== DOM cache ====================
   const DOM = {};
 
