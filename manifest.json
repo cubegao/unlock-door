@@ -2,7 +2,7 @@
   "name": "开门啦",
   "short_name": "开门啦",
   "description": "一键快速开门，无需再打开微信小程序",
-  "start_url": "/unlock-door/",
+  "start_url": ".",
   "scope": "/unlock-door/",
   "display": "standalone",
   "orientation": "portrait",
